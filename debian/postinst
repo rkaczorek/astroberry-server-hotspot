@@ -1,0 +1,10 @@
+#!/bin/bash
+# postinst script for astroberry-server-hotspot
+
+RED='\033[0;31m'
+NC='\033[0m'
+
+mv -f /etc/wpa_supplicant/wpa_supplicant.conf /etc/wpa_supplicant/wpa_supplicant.conf.bak
+
+chmod 600 /etc/NetworkManager/system-connections/HotSpot.nmconnection
+systemctl restart NetworkManager.service

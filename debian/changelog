@@ -1,0 +1,5 @@
+astroberry-server-hotspot (2.0.0) buster; urgency=medium
+
+  * Initial release.
+
+ -- Radek Kaczorek <rkaczorek@gmail.com>  Tue, 05 Nov 2019 16:19:17 +0100

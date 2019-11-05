@@ -1,0 +1,13 @@
+Source: astroberry-server-hotspot
+Section: science
+Priority: extra
+Maintainer: Radek Kaczorek <rkaczorek@gmail.com>
+Build-Depends: debhelper (>= 9), cdbs, cmake (>= 2.4.7), cmake
+Standards-Version: 3.9.1
+Homepage: http://www.astroberry.io/
+
+Package: astroberry-server-hotspot
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, network-manager, network-manager-gnome
+Description: Astroberry Server is a ready to use astronomy desktop system for Raspberry Pi
+ This is package provides wireless hotspot functionality for Astroberry Server
