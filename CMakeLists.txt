@@ -7,8 +7,6 @@ set (VERSION_RELEASE 0)
 
 set(NM_CONFIG_DIR "/etc/NetworkManager")
 
-message("=========================================== $ENV{DESTDIR}/${BUILD_ROOT} ==============================================")
-
 if (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 	install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/HotSpot.nmconnection DESTINATION ${NM_CONFIG_DIR}/system-connections)
 	install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/wifi-powersave-off.conf DESTINATION ${NM_CONFIG_DIR}/conf.d)
